@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Enigme 3</name>
+    <events>
+        <event-block sid="152511954692330">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="599209225118224" type="Potion1" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="351387308578225">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="559258903064818" type="Potion1">
+                            <param id="0" name="Object">Position1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="625778670613196" type="Potion1">
+                            <param id="0" name="X">Position1.X</param>
+                            <param id="1" name="Y">Position1.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="521065665234881">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="435109937284460" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="930518496969773" type="Potion1">
+                            <param id="0" name="X">Potion1.P1_x</param>
+                            <param id="1" name="Y">Potion1.P1_y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Enigme 1</name>
+    <events>
+        <event-block sid="908680391383792">
+            <conditions>
+                <condition id="4" name="On finished" sid="736429602600067" type="Pistons">
+                    <param id="0" name="Animation">&quot;Animation&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="291468132070962" type="Pistons">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="325465873995379">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="502038536024701" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="672252954262494" type="cle">
+                    <param id="0" name="Pin to">glass_cle</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="574482953487411">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="530183061619847" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Pistons</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="768414302077806" type="Pistons">
+                    <param id="0" name="Animation">&quot;Animation&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="509225721189839">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="616706527119447" type="cle">
+                    <param id="0" name="Object">Pistons</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="1" name="Unpin" sid="247162352494440" type="cle" />
+                <action behavior="Pin" id="0" name="Pin to object" sid="164307686223915" type="cle">
+                    <param id="0" name="Pin to">Pistons</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

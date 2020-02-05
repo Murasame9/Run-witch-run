@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Niveau 1</name>
+    <events>
+        <comment>// Change de layout et commence l&apos;enigme</comment>
+        <event-block sid="428201703973953">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="406960433135652" type="Keyboard">
+                    <param id="0" name="Key">70</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="147009564806839" type="Personnage">
+                    <param id="0" name="Object">Enigme1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="678192152536975" type="System">
+                    <param id="0" name="Layout">Enigme1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="315842390143130">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="584901181967075" type="Keyboard">
+                    <param id="0" name="Key">70</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="828252155571780" type="Personnage">
+                    <param id="0" name="Object">enigme2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="660933377885815" type="System">
+                    <param id="0" name="Layout">Enigme2</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>// Deplacement avec ZQSD</comment>
+        <event-block sid="917821823951983">
+            <conditions>
+                <condition id="2" name="Key is down" sid="203812433379777" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="536714931358570" type="Personnage">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="637624355590581">
+            <conditions>
+                <condition id="2" name="Key is down" sid="502416964948641" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="683517016833286" type="Personnage">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="401562502553671">
+            <conditions>
+                <condition id="2" name="Key is down" sid="108883601422551" type="Keyboard">
+                    <param id="0" name="Key">81</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="459227400799236" type="Personnage">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="820657561375839">
+            <conditions>
+                <condition id="2" name="Key is down" sid="140193675916281" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="657542979924444" type="Personnage">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
