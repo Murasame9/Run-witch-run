@@ -10,6 +10,7 @@
     <unique-id>1v7nghmxyzyd9</unique-id>
     <saved-with-version>27500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -29,8 +30,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1920</width>
-        <height>1080</height>
+        <width>250</width>
+        <height>150</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -41,13 +42,13 @@
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Progress bar only</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">(default)</prop>
-        <prop name="Sampling">Linear</prop>
+        <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
@@ -186,13 +187,27 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.0294118" />
                     </animation>
                     <animation framecount="7" loop="0" name="Animation" pingpong="0" repeatcount="1" repeatto="0" sid="972000907920101" speed="5">
-                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.214286" />
-                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.34" />
-                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.431034" />
-                        <frame duration="5" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.431034" />
-                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.34" />
-                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.214286" />
+                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.214286">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                        </frame>
+                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.34">
+                            <image-point name="Imagepoint 1" x="0.5" y="-0.34" />
+                        </frame>
+                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.431034">
+                            <image-point name="Imagepoint 1" x="0.5" y="-0.327586" />
+                        </frame>
+                        <frame duration="5" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.5" y="-0.333333" />
+                        </frame>
+                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.431034">
+                            <image-point name="Imagepoint 1" x="0.5" y="-0.327586" />
+                        </frame>
+                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.34">
+                            <image-point name="Imagepoint 1" x="0.5" y="-0.34" />
+                        </frame>
+                        <frame duration="0.5" hotspotX="0.5" hotspotY="0.214286">
+                            <image-point name="Imagepoint 1" x="0.5" y="-0.333333" />
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -520,16 +535,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264955130529043" speed="5">
-                    <frame duration="1" hotspotX="0.338" hotspotY="0.177524" original-source="H:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Inside.png">
+                    <frame duration="1" hotspotX="-0.16" hotspotY="-0.628664" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Map002.png">
                         <collision-poly>
-                            <point x="0.266" y="0.118893" />
-                            <point x="0.338" y="0.00162866" />
-                            <point x="0.494" y="0.0504886" />
-                            <point x="0.506" y="0.177524" />
-                            <point x="0.938" y="0.666124" />
-                            <point x="0.338" y="0.998371" />
-                            <point x="0.086" y="0.382736" />
-                            <point x="0.038" y="0.177524" />
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0.319568" y="0" />
+                            <point x="0.356432" y="0" />
+                            <point x="1" y="0.593105" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -561,6 +576,70 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type global="1" name="Array" sid="390611452957819">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Sprite3" sid="814205801893390">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751354215256241" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="692691901554740">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="971687527407082" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Outside.png">
+                        <collision-poly>
+                            <point x="0.480469" y="0.480469" />
+                            <point x="0.5" y="0.441406" />
+                            <point x="0.542969" y="0.457031" />
+                            <point x="0.546875" y="0.5" />
+                            <point x="0.691406" y="0.691406" />
+                            <point x="0.5" y="0.832031" />
+                            <point x="0.414063" y="0.585938" />
+                            <point x="0.480469" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="108352074823451">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="352508563146018" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tilemap2" sid="102397880770147">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="497782477811128">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="GoDedans" sid="333104261740228">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881679783141401" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GoDehors" sid="581367628176426">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="174632484084496" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Pistons" plugin-id="Sprite" sid="491742696654051">
@@ -582,6 +661,7 @@
         <layout>Enigme1.xml</layout>
         <layout>Enigme2.xml</layout>
         <layout>Enigme3.xml</layout>
+        <layout>Niveau 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet Niveau 1.xml</event-sheet>
@@ -589,6 +669,7 @@
         <event-sheet>Event sheet Enigme 2.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet Enigme 3.xml</event-sheet>
+        <event-sheet>Event sheet Niveau 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="2" />

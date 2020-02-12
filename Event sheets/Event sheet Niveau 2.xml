@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Niveau 2</name>
+    <events>
+        <variable constant="0" name="VientDeDehors" sid="432272672469929" static="0" type="number">0</variable>
+        <include>Event sheet Niveau 1</include>
+        <event-block sid="545176263788291">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="509177608744390" type="Personnage">
+                    <param id="0" name="Object">GoDedans</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="978541546979327" type="System">
+                    <param id="0" name="Layout">Niveau1</param>
+                </action>
+                <action id="-9" name="Set value" sid="365081496808572" type="System">
+                    <param id="0" name="Variable">VientDeDehors</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
