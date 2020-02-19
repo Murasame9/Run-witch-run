@@ -4,366 +4,250 @@
     <name>Event sheet Enigme 2</name>
     <events>
         <variable constant="0" name="UIDClic" sid="949237685446934" static="0" type="number">0</variable>
-        <comment>// Clic sur la lumiere pour l&apos;allumer/l&apos;eteindre</comment>
-        <event-block sid="654749468236287">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="298072303429552" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">lumiere</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="767827531991927" title="Gestions des lumières">
             <sub-events>
-                <event-block sid="334717889368664">
+                <comment>// Clic sur la lumiere pour l&apos;allumer/l&apos;eteindre + allume/eteind ce a coté</comment>
+                <event-block sid="654749468236287">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="741117015193606" type="lumiere">
+                        <condition id="6" name="On object clicked" sid="298072303429552" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">lumiere</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>// Pour la lumière sur la quel on clique dessus</comment>
+                        <event-block sid="334717889368664">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="741117015193606" type="lumiere">
+                                    <param id="0" name="Instance variable">Allume</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="170493918106438" type="lumiere">
+                                    <param id="0" name="Instance variable">Allume</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="403405466120577">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="239943725817642" type="System" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="204168475081697" type="lumiere">
+                                    <param id="0" name="Instance variable">Allume</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="441524193527409" type="lumiere">
+                                    <param id="0" name="Instance variable">Allume</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>// Pour les autres</comment>
+                        <event-block sid="160382263271290">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="550140407831661" type="lumiere">
+                                    <param id="0" name="Unique ID">lumiere.L1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="841920291450729">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="912782915778161" type="lumiere">
+                                            <param id="0" name="Instance variable">Allume</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="198919895690866" type="lumiere">
+                                            <param id="0" name="Instance variable">Allume</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="242351296452327">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="445625124246630" type="System" />
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="392761714915579" type="lumiere">
+                                            <param id="0" name="Instance variable">Allume</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="852407242386284" type="lumiere">
+                                            <param id="0" name="Instance variable">Allume</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="202386670005352">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="825215195273319" type="lumiere">
+                                    <param id="0" name="Unique ID">lumiere.L2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="729994903221697">
+                                    <conditions>
+                                        <condition id="-8" name="Is boolean instance variable set" sid="913883781180364" type="lumiere">
+                                            <param id="0" name="Instance variable">Allume</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="895059122683262" type="lumiere">
+                                            <param id="0" name="Instance variable">Allume</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="451698422180108">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="399859066852735" type="System" />
+                                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="630658699884497" type="lumiere">
+                                            <param id="0" name="Instance variable">Allume</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-13" name="Set boolean" sid="827127593063841" type="lumiere">
+                                            <param id="0" name="Instance variable">Allume</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="664806015690021">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="657125525805397" type="System">
+                                    <param id="0" name="First value">lumiere.L3</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="644270979123658">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="863417400240532" type="lumiere">
+                                            <param id="0" name="Unique ID">lumiere.L3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="974138777422763">
+                                            <conditions>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="658961946886227" type="lumiere">
+                                                    <param id="0" name="Instance variable">Allume</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="337140922879435" type="lumiere">
+                                                    <param id="0" name="Instance variable">Allume</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="431536130744449">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="908147998496595" type="System" />
+                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="707492312722013" type="lumiere">
+                                                    <param id="0" name="Instance variable">Allume</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="729262322652888" type="lumiere">
+                                                    <param id="0" name="Instance variable">Allume</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="671376476044818">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="999291591744987" type="System">
+                                    <param id="0" name="First value">lumiere.L4</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="294467182208954">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="197728319553582" type="lumiere">
+                                            <param id="0" name="Unique ID">lumiere.L4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="454756693308286">
+                                            <conditions>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="993902865354851" type="lumiere">
+                                                    <param id="0" name="Instance variable">Allume</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="603778062594063" type="lumiere">
+                                                    <param id="0" name="Instance variable">Allume</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="666466753061716">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="738214271286522" type="System" />
+                                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="548146212603226" type="lumiere">
+                                                    <param id="0" name="Instance variable">Allume</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-13" name="Set boolean" sid="642881920528996" type="lumiere">
+                                                    <param id="0" name="Instance variable">Allume</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>// Gere la couleur des cases</comment>
+                <event-block sid="462281962718614">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="379671800228716" type="lumiere">
                             <param id="0" name="Instance variable">Allume</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="170493918106438" type="lumiere">
-                            <param id="0" name="Instance variable">Allume</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="4" name="Set animation" sid="632480307957955" type="lumiere">
+                            <param id="0" name="Animation">&quot;Allume&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="403405466120577">
+                <event-block sid="676446559259799">
                     <conditions>
-                        <condition id="-22" name="Else" sid="239943725817642" type="System" />
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="204168475081697" type="lumiere">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="959346901653980" type="lumiere">
                             <param id="0" name="Instance variable">Allume</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-13" name="Set boolean" sid="441524193527409" type="lumiere">
-                            <param id="0" name="Instance variable">Allume</param>
-                            <param id="1" name="Value">1</param>
+                        <action id="4" name="Set animation" sid="908024974196903" type="lumiere">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <comment>// Gere la couleur des cases</comment>
-        <event-block sid="462281962718614">
-            <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="379671800228716" type="lumiere">
-                    <param id="0" name="Instance variable">Allume</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="632480307957955" type="lumiere">
-                    <param id="0" name="Animation">&quot;Allume&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="676446559259799">
-            <conditions>
-                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="959346901653980" type="lumiere">
-                    <param id="0" name="Instance variable">Allume</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="908024974196903" type="lumiere">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <comment>// Allume les cases a coté </comment>
-        <event-block sid="495550217826468">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="902637368542497" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">lumiere</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="262036753496309" type="System">
-                    <param id="0" name="Variable">UIDClic</param>
-                    <param id="1" name="Value">lumiere.UID</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block disabled="1" sid="207841115067250">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="299569603929486" type="System">
-                            <param id="0" name="First value">UIDClic-5</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Second value">14</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="737001716977576" type="lumiere">
-                            <param id="0" name="Unique ID">UIDClic -5</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block disabled="1" sid="660568702249119">
-                            <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="694103629233482" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="605686621494418" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="135942482700943">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="981658039639162" type="System" />
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="730983118108691" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="526392147419350" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block disabled="1" sid="503371852150934">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="779366844960711" type="System">
-                            <param id="0" name="First value">UIDClic+5</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Second value">38</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="375204295103283" type="lumiere">
-                            <param id="0" name="Unique ID">UIDClic+5</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block disabled="1" sid="716419583912163">
-                            <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="650936802636092" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="104984884947208" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="204665378519295">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="833871977890866" type="System" />
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="828731395041623" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="188636129429279" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block disabled="1" sid="424379879268139">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="818481885051990" type="System">
-                            <param id="0" name="First value">UIDClic-1</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Second value">14</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="640950873074653" type="lumiere">
-                            <param id="0" name="Unique ID">UIDClic-1</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block disabled="1" sid="367060261797925">
-                            <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="624309096156251" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="489716065614231" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="976088523597335">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="226409230943480" type="System" />
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="273088401707317" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="456391424393918" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block disabled="1" sid="477067515630474">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="904997804671142" type="System">
-                            <param id="0" name="First value">UIDClic+1</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Second value">38</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="503716527179338" type="lumiere">
-                            <param id="0" name="Unique ID">UIDClic+1</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block disabled="1" sid="762011117433105">
-                            <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="215903699767620" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="887016193887395" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="806420714613369">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="946744492759090" type="System" />
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="282581037995226" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="198316258457879" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block disabled="1" sid="222389711930385">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="200664035089359" type="System" />
-                <condition id="-10" name="For" sid="686415977941549" type="System">
-                    <param id="0" name="Name">&quot;x&quot;</param>
-                    <param id="1" name="Start index">1</param>
-                    <param id="2" name="End index">5</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block disabled="1" sid="543577616101827">
-                    <conditions>
-                        <condition id="-10" name="For" sid="829051296023921" type="System">
-                            <param id="0" name="Name">&quot;y&quot;</param>
-                            <param id="1" name="Start index">1</param>
-                            <param id="2" name="End index">5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="3" name="Set at XY" sid="301389193538439" type="Array">
-                            <param id="0" name="X">loopindex(&quot;x&quot;)</param>
-                            <param id="1" name="Y">loopindex(&quot;y&quot;)</param>
-                            <param id="2" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="635465749080071">
-            <conditions>
-                <condition id="-8" name="Is boolean instance variable set" sid="926035349036099" type="lumiere">
-                    <param id="0" name="Instance variable">Allume</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="179266850717594" type="lumiere">
-                    <param id="0" name="Animation">&quot;Allume&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="954296658124839">
-            <conditions>
-                <condition id="-22" name="Else" sid="349496532850578" type="System" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="755736870725189" type="lumiere">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="219163815201377">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="100041489308713" type="System" />
-                <condition id="-10" name="For" sid="907860068806658" type="System">
-                    <param id="0" name="Name">&quot;x&quot;</param>
-                    <param id="1" name="Start index">1</param>
-                    <param id="2" name="End index">5</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block disabled="1" sid="684609446844738">
-                    <conditions>
-                        <condition id="-10" name="For" sid="794622607219424" type="System">
-                            <param id="0" name="Name">&quot;y&quot;</param>
-                            <param id="1" name="Start index">1</param>
-                            <param id="2" name="End index">5</param>
-                        </condition>
-                        <condition id="-14" name="Pick by unique ID" sid="423146145407216" type="lumiere">
-                            <param id="0" name="Unique ID">14+loopindex(&quot;x&quot;)*5+loopindex(&quot;y&quot;)</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block disabled="1" sid="795690102050764">
-                            <conditions>
-                                <condition id="1" name="Compare at XY" sid="721329430848183" type="Array">
-                                    <param id="0" name="X">loopindex(&quot;x&quot;)</param>
-                                    <param id="1" name="Y">loopindex(&quot;y&quot;)</param>
-                                    <param id="2" name="Comparison">0</param>
-                                    <param id="3" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="299056668691547" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="954227703230265">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="608884663748457" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-13" name="Set boolean" sid="468384074908382" type="lumiere">
-                                    <param id="0" name="Instance variable">Allume</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-block>
+        </event-group>
     </events>
 </c2eventsheet>

@@ -10,12 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Menu</layout>
-        <layout order="2">options</layout>
-        <layout order="4">Enigme3</layout>
-        <layout active="1" order="5">Enigme2</layout>
-        <event-sheet order="1">Event sheet Menu</event-sheet>
-        <event-sheet order="3">Event sheet options</event-sheet>
+        <layout order="0">Enigme2</layout>
+        <event-sheet active="1" order="1">Event sheet Enigme 2</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,15 +21,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1">
         <family expanded="1" name="Pistons" />
+        <family expanded="0" name="lumières" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="0" path="object-folder/Enigme1/" />
         <folder expanded="0" path="object-folder/Enigme2/" />
         <folder expanded="1" path="object-folder/Niveau1/" />
         <folder expanded="0" path="object-folder/Enigme 3/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />

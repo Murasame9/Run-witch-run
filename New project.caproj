@@ -760,6 +760,17 @@
                 </behavior-type>
             </behaviors>
         </family>
+        <family name="lumières" plugin-id="Sprite" sid="626680977964265">
+            <members>
+                <member>lumiere</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="L1" sid="372687357217224" type="number" />
+                <instance-variable name="L2" sid="921980588902277" type="number" />
+                <instance-variable name="L3" sid="153766950245652" type="number" />
+                <instance-variable name="L4" sid="265980045056254" type="number" />
+            </instance-variables>
+        </family>
     </families>
     <layout-folder>
         <layout>Niveau1.xml</layout>
