@@ -10,16 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Enigme3</layout>
-        <layout active="1" order="6">Niveau1</layout>
-        <layout order="2">Enigme1</layout>
-        <layout order="4">Enigme2</layout>
-        <layout order="7">Niveau 2</layout>
-        <event-sheet order="1">Event sheet Enigme 3</event-sheet>
-        <event-sheet order="3">Event sheet Enigme 1</event-sheet>
-        <event-sheet order="5">Event sheet Enigme 2</event-sheet>
-        <event-sheet order="8">Event sheet Niveau 2</event-sheet>
-        <event-sheet order="9">Event sheet Niveau 1</event-sheet>
+        <layout order="0">Menu</layout>
+        <layout order="2">options</layout>
+        <layout order="4">Enigme3</layout>
+        <layout active="1" order="5">Enigme2</layout>
+        <event-sheet order="1">Event sheet Menu</event-sheet>
+        <event-sheet order="3">Event sheet options</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -65,13 +61,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Potion5/" />
         <folder expanded="1" path="animation-folder/Potion6/" />
         <folder expanded="1" path="animation-folder/Potion7/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/map/" />
         <folder expanded="1" path="animation-folder/enigme2/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/jardin/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/GoDedans/" />
         <folder expanded="1" path="animation-folder/GoDehors/" />
+        <folder expanded="1" path="animation-folder/MenuPrincipal/" />
+        <folder expanded="1" path="animation-folder/selecteurOption/" />
+        <folder expanded="1" path="animation-folder/MenuOptions/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/barre_volume/" />
     </folders-expanded>
 </c2uistate>

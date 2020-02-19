@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Menu</name>
+    <events>
+        <variable constant="0" name="option_select" sid="497115869644429" static="0" type="number">0</variable>
+        <comment>// Descendre</comment>
+        <event-block sid="903685860979582">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="763090711189838" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="830856100113297" type="System">
+                    <param id="0" name="Variable">option_select</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="441943300967408">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="214599730862944" type="System">
+                            <param id="0" name="Variable">option_select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="443089443890904" type="System">
+                            <param id="0" name="Variable">option_select</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>// Monter</comment>
+        <event-block sid="826083480448332">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="322954250314639" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="732409572106701" type="System">
+                    <param id="0" name="Variable">option_select</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="759619143859658">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="216437257972281" type="System">
+                            <param id="0" name="Variable">option_select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="487293006222135" type="System">
+                            <param id="0" name="Variable">option_select</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>// Change la position de la selection</comment>
+        <event-block sid="436559398998007">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="450573307851256" type="System">
+                    <param id="0" name="Variable">option_select</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="832769099724152" type="selecteurOption">
+                    <param id="0" name="X">191</param>
+                    <param id="1" name="Y">64</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="423680190332326">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="246613675180970" type="System">
+                    <param id="0" name="Variable">option_select</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="654575123695468" type="selecteurOption">
+                    <param id="0" name="X">191</param>
+                    <param id="1" name="Y">81</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="199470802850834">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="727509424957527" type="System">
+                    <param id="0" name="Variable">option_select</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="675152219599373" type="selecteurOption">
+                    <param id="0" name="X">191</param>
+                    <param id="1" name="Y">99</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>// Quand on appuie sur enter</comment>
+        <comment>// Option qui lance le jeu</comment>
+        <event-block sid="690080593227911">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="488963082497115" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="914219088013524" type="System">
+                    <param id="0" name="Variable">option_select</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="310277085688163" type="System">
+                    <param id="0" name="Layout">Cinematique start</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>// Option qui lance les options</comment>
+        <event-block sid="334044773197828">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="959355332240111" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="349305955774193" type="System">
+                    <param id="0" name="Variable">option_select</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="271232767799010" type="System">
+                    <param id="0" name="Layout">options</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>// Option qui quitte le jeu</comment>
+        <event-block sid="220339234937403">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="349414428112088" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="394789675388016" type="System">
+                    <param id="0" name="Variable">option_select</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="424461846182059" type="Browser" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

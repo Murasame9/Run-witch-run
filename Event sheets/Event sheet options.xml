@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet options</name>
+    <events>
+        <variable comment="// Determine si le song est faible/moyen/fort" constant="0" name="type_volume_selectionner" sid="390260955983549" static="0" type="number">1</variable>
+        <variable comment="// 0 = pas select 1 = select" constant="0" name="option_volume_select" sid="195449520234704" static="0" type="number">0</variable>
+        <event-group description="" sid="328938959782540" title="Options">
+            <sub-events>
+                <event-block sid="575785943457989">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="347788622311515" type="System">
+                            <param id="0" name="Variable">option_volume_select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>// Descendre</comment>
+                        <event-block sid="834537679169903">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="341363475099787" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="415392230119832" type="System">
+                                    <param id="0" name="Variable">option_select</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="865030823129448">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="847896780766297" type="System">
+                                            <param id="0" name="Variable">option_select</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="604770665236310" type="System">
+                                            <param id="0" name="Variable">option_select</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>// Monter</comment>
+                        <event-block sid="621114170300581">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="177806410098396" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="165203355326295" type="System">
+                                    <param id="0" name="Variable">option_select</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="930179832239196">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="463551664803207" type="System">
+                                            <param id="0" name="Variable">option_select</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="414893631320529" type="System">
+                                            <param id="0" name="Variable">option_select</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>// Change la position de la selection</comment>
+                        <event-block sid="492751312404089">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="382474245272931" type="System">
+                                    <param id="0" name="Variable">option_select</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="378359972789351" type="selecteurOption">
+                                    <param id="0" name="X">191</param>
+                                    <param id="1" name="Y">64</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="668367520636477">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="691532433692526" type="System">
+                                    <param id="0" name="Variable">option_select</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="837985898568764" type="selecteurOption">
+                                    <param id="0" name="X">191</param>
+                                    <param id="1" name="Y">92</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>// Option qui selectionne le volume</comment>
+                        <event-block sid="809637678429374">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="661780136382686" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="592573725307062" type="System">
+                                    <param id="0" name="Variable">option_select</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="769877660661217" type="System">
+                                    <param id="0" name="Variable">option_volume_select</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>// Option qui retourne au menu</comment>
+                        <event-block sid="975671761994258">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="933843405007730" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="793607897288352" type="System">
+                                    <param id="0" name="Variable">option_select</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="327775932864978" type="System">
+                                    <param id="0" name="Layout">Menu</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="794140134410814" title="Volume">
+            <sub-events>
+                <comment>// !!!!!!! ICI CHANGER DE VOLUME DU SONG !!!!!!!!!</comment>
+                <event-block sid="278780405918763">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="295238283461324" type="System">
+                            <param id="0" name="Variable">type_volume_selectionner</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="924971056136473" type="barre_volume">
+                            <param id="0" name="Animation">&quot;VolumeS&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="630066632528660">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="992171324769027" type="System">
+                            <param id="0" name="Variable">type_volume_selectionner</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="714958195641734" type="barre_volume">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="902894749682147">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="483623685044042" type="System">
+                            <param id="0" name="Variable">type_volume_selectionner</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="432329920296358" type="barre_volume">
+                            <param id="0" name="Animation">&quot;VolumeL&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>// OPTION POUR LE VOLUME ACTIVE</comment>
+                <event-block sid="404243899588623">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="637137868091755" type="System">
+                            <param id="0" name="Variable">option_volume_select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="691619695175797" type="barre_volume">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>// Echap pour quitter</comment>
+                        <event-block sid="709034006256999">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="750206065987805" type="Keyboard">
+                                    <param id="0" name="Key">27</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="360834028122827" type="System">
+                                    <param id="0" name="Variable">option_volume_select</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="285449969219708" type="barre_volume">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>// Moins</comment>
+                        <event-block sid="845614349579353">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="844067279839758" type="Keyboard">
+                                    <param id="0" name="Key">81</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="109763353589058" type="System">
+                                    <param id="0" name="Variable">type_volume_selectionner</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="808850482798730">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="110726033030248" type="System">
+                                            <param id="0" name="Variable">type_volume_selectionner</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="412929507647428" type="System">
+                                            <param id="0" name="Variable">type_volume_selectionner</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>// plus</comment>
+                        <event-block sid="701769502737614">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="578212101860702" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="340876797150798" type="System">
+                                    <param id="0" name="Variable">type_volume_selectionner</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="158793121131578">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="237269262405169" type="System">
+                                            <param id="0" name="Variable">type_volume_selectionner</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="623845019670636" type="System">
+                                            <param id="0" name="Variable">type_volume_selectionner</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -11,6 +11,7 @@
     <saved-with-version>27500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -531,7 +532,7 @@
         <object-type name="Mouse" sid="917084820977499">
             <plugin id="Mouse" />
         </object-type>
-        <object-type name="Sprite" sid="194921549141240">
+        <object-type name="map" sid="194921549141240">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264955130529043" speed="5">
@@ -587,7 +588,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="692691901554740">
+        <object-type name="jardin" sid="692691901554740">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="971687527407082" speed="5">
@@ -640,6 +641,110 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="MenuPrincipal" sid="416021265562181">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="344374213600365" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Menu\MainMenuNoSelection-8.png">
+                        <collision-poly>
+                            <point x="0.000520833" y="0.000925926" />
+                            <point x="0.999479" y="0.000925926" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="selecteurOption" sid="428960298936355">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="685460087285969" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Menu\Selection.png">
+                        <collision-poly>
+                            <point x="0.0207373" y="0.166667" />
+                            <point x="0.979263" y="0.166667" />
+                            <point x="0.986175" y="0.5" />
+                            <point x="0.951613" y="0.611111" />
+                            <point x="0.0483871" y="0.611111" />
+                            <point x="0.0138249" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MenuOptions" sid="505920974100799">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="122013406283965" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Menu\OptionsNoSelection-8.png">
+                        <collision-poly>
+                            <point x="0.000520833" y="0.000925926" />
+                            <point x="0.999479" y="0.000925926" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="536131450258548">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579248384396842" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Menu\Volume.png">
+                        <collision-poly>
+                            <point x="0.000520833" y="0.000925926" />
+                            <point x="0.999479" y="0.000925926" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="515144372878482">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="barre_volume" sid="710382735807596">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445972896033986" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Menu\VolumeM.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.5" />
+                            <point x="0.5" y="0.413333" />
+                            <point x="0.85" y="0.5" />
+                            <point x="0.854" y="0.5" />
+                            <point x="0.856" y="0.52" />
+                            <point x="0.5" y="0.646667" />
+                            <point x="0.15" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="VolumeS" pingpong="0" repeatcount="1" repeatto="0" sid="226422425603478" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Menu\VolumeS.png">
+                        <collision-poly>
+                            <point x="0.854" y="0.5" />
+                            <point x="0.856" y="0.52" />
+                            <point x="0.5" y="0.546667" />
+                            <point x="0.15" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="VolumeL" pingpong="0" repeatcount="1" repeatto="0" sid="507541859183353" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Menu\VolumeL.png">
+                        <collision-poly>
+                            <point x="0.852" y="0.493333" />
+                            <point x="0.854" y="0.5" />
+                            <point x="0.856" y="0.52" />
+                            <point x="0.5" y="0.546667" />
+                            <point x="0.15" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Pistons" plugin-id="Sprite" sid="491742696654051">
@@ -662,6 +767,9 @@
         <layout>Enigme2.xml</layout>
         <layout>Enigme3.xml</layout>
         <layout>Niveau 2.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>Cinematique start.xml</layout>
+        <layout>options.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet Niveau 1.xml</event-sheet>
@@ -670,10 +778,14 @@
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet Enigme 3.xml</event-sheet>
         <event-sheet>Event sheet Niveau 2.xml</event-sheet>
+        <event-sheet>Event sheet Menu.xml</event-sheet>
+        <event-sheet>Event sheet c start.xml</event-sheet>
+        <event-sheet>Event sheet options.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="2" />
         <global-instance type="Mouse" uid="13" />
+        <global-instance type="Browser" uid="69" />
     </global-instances>
     <sounds-folder />
     <music-folder />
