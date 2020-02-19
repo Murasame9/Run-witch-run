@@ -35,6 +35,7 @@
             </actions>
         </event-block>
         <comment>// Deplacement avec ZQSD</comment>
+        <comment>// changement d&apos;anim en fonction du déplacement</comment>
         <event-block sid="917821823951983">
             <conditions>
                 <condition id="2" name="Key is down" sid="203812433379777" type="Keyboard">
@@ -44,6 +45,10 @@
             <actions>
                 <action behavior="8Direction" id="7" name="Simulate control" sid="536714931358570" type="Personnage">
                     <param id="0" name="Control">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="145951326615083" type="Personnage">
+                    <param id="0" name="Animation">&quot;haut&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -57,6 +62,10 @@
                 <action behavior="8Direction" id="7" name="Simulate control" sid="683517016833286" type="Personnage">
                     <param id="0" name="Control">3</param>
                 </action>
+                <action id="4" name="Set animation" sid="907799877912925" type="Personnage">
+                    <param id="0" name="Animation">&quot;bas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="401562502553671">
@@ -69,6 +78,10 @@
                 <action behavior="8Direction" id="7" name="Simulate control" sid="459227400799236" type="Personnage">
                     <param id="0" name="Control">0</param>
                 </action>
+                <action id="4" name="Set animation" sid="992820253498916" type="Personnage">
+                    <param id="0" name="Animation">&quot;gauche&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="820657561375839">
@@ -80,6 +93,10 @@
             <actions>
                 <action behavior="8Direction" id="7" name="Simulate control" sid="657542979924444" type="Personnage">
                     <param id="0" name="Control">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="271552425142158" type="Personnage">
+                    <param id="0" name="Animation">&quot;droite&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
