@@ -4,8 +4,8 @@
     <sid>638183978839774</sid>
     <event-sheet>Event sheet c start</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>250</width>
+        <height>150</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -28,7 +28,230 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="cine1" uid="68">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>125.029815674</x>
+                        <y>75.005775452</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>150</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="img1" sid="520600988142230">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="cine1text1" uid="71">
+                    <properties>
+                        <text>Quelque part en Europe, une sorcière tenta de créer un sort de rajeunissement. </text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Times New Roman,-11,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>3</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>26.928100586</x>
+                        <y>-44.098846436</y>
+                        <z>0</z>
+                        <width>205.503448486</width>
+                        <height>41.007324219</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cine1text2" uid="72">
+                    <properties>
+                        <text>Celui-ci est très dur à réaliser, personne n’a jamais réussi à le mener à bien et toutes sorcières qui s’y sont essayées sont toutes portées disparues. </text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Times New Roman,-11,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>12.155471802</x>
+                        <y>-93.921012878</y>
+                        <z>0</z>
+                        <width>250.981033325</width>
+                        <height>48.53843689</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cine1text3" uid="73">
+                    <properties>
+                        <text>Malheureusement, notre sorcière n’y échappa pas ! </text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Times New Roman,-11,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>28.37664032</x>
+                        <y>-134.908309937</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>38.689849854</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="img2" sid="760015214338367">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="cine1text4" uid="74">
+                    <properties>
+                        <text>Apparue en 1692 non loin de Salem et accusée de sorcellerie, elle est enfermée dans la prison d’un grand château et sera bientôt mise sur le bûcher. </text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Times New Roman,-11,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2.277282715</x>
+                        <y>157.347518921</y>
+                        <z>0</z>
+                        <width>254.45703125</width>
+                        <height>46.51083374</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cine1text5" uid="75">
+                    <properties>
+                        <text>Ne voulant pas mourir celle-ci utilisa la magie qui lui restait pour s’échapper de sa cellule. </text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Times New Roman,-11,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>21.859680176</x>
+                        <y>212.397064209</y>
+                        <z>0</z>
+                        <width>224.836791992</width>
+                        <height>56.530319214</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="cine1text6" uid="76">
+                    <properties>
+                        <text>Aide là à retrouver le chemin vers son époque. </text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Times New Roman,-11,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1.538528442</x>
+                        <y>-46.002792358</y>
+                        <z>0</z>
+                        <width>220.885437012</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
     </layers>

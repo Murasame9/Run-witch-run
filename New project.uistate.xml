@@ -10,10 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Enigme2</layout>
-        <layout order="2">Niveau1</layout>
-        <event-sheet order="1">Event sheet Enigme 2</event-sheet>
-        <event-sheet active="1" order="3">Event sheet Niveau 1</event-sheet>
+        <layout order="0">Menu</layout>
+        <layout active="1" order="2">Niveau1</layout>
+        <event-sheet order="1">Event sheet c start</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -21,16 +20,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1">
+    <families-expanded root="0">
         <family expanded="1" name="Pistons" />
         <family expanded="0" name="lumières" />
     </families-expanded>
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Enigme1/" />
         <folder expanded="0" path="object-folder/Enigme2/" />
-        <folder expanded="1" path="object-folder/Niveau1/" />
+        <folder expanded="0" path="object-folder/Niveau1/" />
         <folder expanded="0" path="object-folder/Enigme 3/" />
+        <folder expanded="1" path="object-folder/cinematique/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -60,6 +60,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Potion5/" />
         <folder expanded="1" path="animation-folder/Potion6/" />
         <folder expanded="1" path="animation-folder/Potion7/" />
+        <folder expanded="1" path="animation-folder/cine1/" />
         <folder expanded="1" path="animation-folder/map/" />
         <folder expanded="1" path="animation-folder/enigme2/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
@@ -73,5 +74,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MenuOptions/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/barre_volume/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
     </folders-expanded>
 </c2uistate>

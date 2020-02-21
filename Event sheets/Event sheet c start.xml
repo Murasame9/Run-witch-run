@@ -2,5 +2,173 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet c start</name>
-    <events />
+    <events>
+        <variable constant="0" name="clic" sid="725109530704974" static="0" type="number">0</variable>
+        <event-block sid="443217575358847">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="722809699018999" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="444890714435438" type="cine1text1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="409168349220905" type="cine1text1">
+                    <param id="0" name="X">17.948</param>
+                    <param id="1" name="Y"> 111.451</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="952255824243648">
+            <conditions>
+                <condition id="0" name="On click" sid="708879911969804" type="Mouse">
+                    <param id="0" name="Mouse button">2</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="839781187959788" type="System">
+                    <param id="0" name="Variable">clic</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="840952569474030">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="187106358174534" type="System">
+                    <param id="0" name="Variable">clic</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="394568097090484" type="cine1text1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="424426398291789" type="cine1text2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="762572198906842" type="cine1text2">
+                    <param id="0" name="X">-0.3</param>
+                    <param id="1" name="Y">100.444</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="913098050586683">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="786850412053782" type="System">
+                    <param id="0" name="Variable">clic</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="749761506327131" type="cine1text2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="278796236418661" type="cine1text3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="704922528984922" type="cine1text3">
+                    <param id="0" name="X">16.79</param>
+                    <param id="1" name="Y">114.348</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="717880477053487">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="186475312592023" type="System">
+                    <param id="0" name="Variable">clic</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="852645050081489" type="cine1text3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="414092663722572" type="cine1">
+                    <param id="0" name="Animation">&quot;suite&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="635944001784084">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="278406063741312" type="System">
+                    <param id="0" name="Variable">clic</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="974117386189110" type="cine1">
+                    <param id="0" name="Animation">&quot;suite2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="996706427302717" type="cine1text4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="247715979291366" type="cine1text4">
+                    <param id="0" name="X">-4.645</param>
+                    <param id="1" name="Y">103.775</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="819003703777796">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="885421887284021" type="System">
+                    <param id="0" name="Variable">clic</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="367342419139610" type="cine1text4">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="448750511385890" type="cine1text5">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="498795839742799" type="cine1text5">
+                    <param id="0" name="X">10.006</param>
+                    <param id="1" name="Y">-0.409</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698846798433968">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="942636361447648" type="System">
+                    <param id="0" name="Variable">clic</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="447238177496278" type="cine1text5">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="494504013274972" type="cine1text6">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="494295478771584" type="cine1text6">
+                    <param id="0" name="X">15.65</param>
+                    <param id="1" name="Y">4.235</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="341471992547496">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="752112749075174" type="System">
+                    <param id="0" name="Variable">clic</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="673291534981766" type="System">
+                    <param id="0" name="Layout">Niveau1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

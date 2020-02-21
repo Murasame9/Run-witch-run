@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
@@ -653,6 +654,37 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="cinematique">
+            <object-type name="cine1" sid="495357671409904">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340974719005507" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Run-witch-run\Cinematique\Potion.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="suite" pingpong="0" repeatcount="1" repeatto="0" sid="240884695720348" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Run-witch-run\Cinematique\Passe.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="suite2" pingpong="0" repeatcount="1" repeatto="0" sid="485163610680420" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Run-witch-run\Cinematique\Prison.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cine1text1" sid="578391631578020">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="cine1text2" sid="666354143742480">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="cine1text3" sid="108039808224108">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="cine1text4" sid="380774551841795">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="cine1text5" sid="152999087634490">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="Keyboard" sid="456388559561016">
             <plugin id="Keyboard" />
         </object-type>
@@ -867,6 +899,64 @@
                             <point x="0.856" y="0.52" />
                             <point x="0.5" y="0.546667" />
                             <point x="0.15" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cine1text6" sid="973220630584088">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite4" sid="602819232579298">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863502985084426" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="325599736499537">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135154863619943" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.312" y="0.328" />
+                            <point x="0.636" y="0.332" />
+                            <point x="0.636" y="0.667999" />
+                            <point x="0.312" y="0.668" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.312" y="0.328" />
+                            <point x="0.636" y="0.332" />
+                            <point x="0.636" y="0.667999" />
+                            <point x="0.312" y="0.668" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.312" y="0.328" />
+                            <point x="0.636" y="0.332" />
+                            <point x="0.636" y="0.667999" />
+                            <point x="0.312" y="0.668" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.312" y="0.328" />
+                            <point x="0.636" y="0.332" />
+                            <point x="0.636" y="0.667999" />
+                            <point x="0.312" y="0.668" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.312" y="0.328" />
+                            <point x="0.636" y="0.332" />
+                            <point x="0.636" y="0.667999" />
+                            <point x="0.312" y="0.668" />
                         </collision-poly>
                     </frame>
                 </animation>
