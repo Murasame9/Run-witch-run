@@ -22,6 +22,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -959,6 +960,36 @@
                             <point x="0.312" y="0.668" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="209837825014684">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="958014545775024">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="devant" pingpong="0" repeatcount="1" repeatto="0" sid="905435189723174" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\0.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\2.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="gauche" pingpong="0" repeatcount="1" repeatto="0" sid="657389529719588" speed="5">
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.5" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\3.png" />
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.507246" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\4.png" />
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.5" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\5.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="droite" pingpong="0" repeatcount="1" repeatto="0" sid="260287967008451" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\8.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="derriere" pingpong="0" repeatcount="1" repeatto="0" sid="973643601912362" speed="5">
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.507937" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\9.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507937" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\11.png" />
                 </animation>
             </animation-folder>
         </object-type>
