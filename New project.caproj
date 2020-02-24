@@ -971,9 +971,8 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="3" loop="1" name="devant" pingpong="0" repeatcount="1" repeatto="0" sid="905435189723174" speed="5">
+                <animation framecount="2" loop="1" name="devant" pingpong="0" repeatcount="1" repeatto="0" sid="905435189723174" speed="2">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\0.png" />
-                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\1.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\2.png" />
                 </animation>
                 <animation framecount="3" loop="1" name="gauche" pingpong="0" repeatcount="1" repeatto="0" sid="657389529719588" speed="5">
@@ -990,6 +989,22 @@
                     <frame duration="1" hotspotX="0.515152" hotspotY="0.507937" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\9.png" />
                     <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\10.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.507937" original-source="C:\Ludus\GD\TP_SorcieresDeSaleme\Sources\Soldat\11.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="571397162845524">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151448249726952" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="760797705574011">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="930381402043222" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
