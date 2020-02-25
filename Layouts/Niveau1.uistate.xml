@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>178.625</position-x>
-        <position-y>402.372</position-y>
-        <position-z>17.8372</position-z>
-        <lookat-x>178.625</lookat-x>
-        <lookat-y>402.372</lookat-y>
+        <position-x>473.907</position-x>
+        <position-y>594.438</position-y>
+        <position-z>28.727</position-z>
+        <lookat-x>473.907</lookat-x>
+        <lookat-y>594.438</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,11 +23,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="objet" />
+    <active-layer name="Enigme Potions" />
     <layers>
         <layer locked="1" name="Layer 0" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="image_fond" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="tilemap" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="tilemap" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="objet" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Enigme Potions" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

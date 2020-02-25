@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -537,120 +538,304 @@
             </object-type>
             <object-type name="Potion1" sid="827288033753001">
                 <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="P1_x" sid="588571608248367" type="number" />
-                    <instance-variable name="P1_y" sid="118560123053779" type="number" />
-                </instance-variables>
-                <behaviors>
-                    <behavior-type name="DragDrop" sid="706171365842427">
-                        <behavior id="DragnDrop" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="427181168512746" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.512195" hotspotY="0.512195" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\P-Poison.png">
+                            <collision-poly>
+                                <point x="0.196721" y="0.179104" />
+                                <point x="0.491803" y="0.0298507" />
+                                <point x="0.901639" y="0.0895522" />
+                                <point x="0.95082" y="0.492537" />
+                                <point x="0.721311" y="0.746269" />
+                                <point x="0.491803" y="0.761194" />
+                                <point x="0.278689" y="0.746269" />
+                                <point x="0.278689" y="0.492537" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
             <object-type name="Potion2" sid="285593713219533">
                 <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="P2_x" sid="789199195509045" type="number" />
-                    <instance-variable name="P2_y" sid="959620036268756" type="number" />
-                </instance-variables>
-                <behaviors>
-                    <behavior-type name="DragDrop" sid="143437120037978">
-                        <behavior id="DragnDrop" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="112002598660336" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\P-Poison2.png">
+                            <collision-poly>
+                                <point x="0.0731707" y="0.0731707" />
+                                <point x="0.5" y="0" />
+                                <point x="0.926829" y="0.0731707" />
+                                <point x="1" y="0.5" />
+                                <point x="0.926829" y="0.926829" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0731707" y="0.926829" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
             <object-type name="Potion3" sid="104072341758593">
                 <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="P3_x" sid="580086664613637" type="number" />
-                    <instance-variable name="P3_y" sid="888923594805527" type="number" />
-                </instance-variables>
-                <behaviors>
-                    <behavior-type name="DragDrop" sid="443642563634929">
-                        <behavior id="DragnDrop" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="967318584657093" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\P-Poison3.png">
+                            <collision-poly>
+                                <point x="0.0731707" y="0.0731707" />
+                                <point x="0.5" y="0" />
+                                <point x="0.926829" y="0.0731707" />
+                                <point x="1" y="0.5" />
+                                <point x="0.926829" y="0.926829" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0731707" y="0.926829" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
             <object-type name="Potion4" sid="330045740486284">
                 <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="P4_x" sid="862541247807195" type="number" />
-                    <instance-variable name="P4_y" sid="751927537704945" type="number" />
-                </instance-variables>
-                <behaviors>
-                    <behavior-type name="DragDrop" sid="575704533271188">
-                        <behavior id="DragnDrop" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581708241845142" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\V-Vin.png">
+                            <collision-poly>
+                                <point x="0.0731707" y="0.0731707" />
+                                <point x="0.5" y="0" />
+                                <point x="0.926829" y="0.0731707" />
+                                <point x="1" y="0.5" />
+                                <point x="0.926829" y="0.926829" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0731707" y="0.926829" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
             <object-type name="Potion5" sid="108654531602499">
                 <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="P5_x" sid="536991998596189" type="number" />
-                    <instance-variable name="P5_y" sid="275612284939539" type="number" />
-                </instance-variables>
-                <behaviors>
-                    <behavior-type name="DragDrop" sid="658545924993193">
-                        <behavior id="DragnDrop" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="366734209643657" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.506024" hotspotY="0.506024" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\V-Vin2.png">
+                            <collision-poly>
+                                <point x="0.0722892" y="0.0722892" />
+                                <point x="0.493976" y="0.0120482" />
+                                <point x="0.915663" y="0.0843373" />
+                                <point x="0.987952" y="0.493976" />
+                                <point x="0.927711" y="0.927711" />
+                                <point x="0.493976" y="1" />
+                                <point x="0.0722892" y="0.927711" />
+                                <point x="0" y="0.493976" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
             <object-type name="Potion6" sid="474485570721652">
                 <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="P6_x" sid="185700387101696" type="number" />
-                    <instance-variable name="P6_y" sid="959934885675708" type="number" />
-                </instance-variables>
-                <behaviors>
-                    <behavior-type name="DragDrop" sid="439731853650911">
-                        <behavior id="DragnDrop" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="898632955957134" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\AR-Arriere.png">
+                            <collision-poly>
+                                <point x="0.0731707" y="0.0731707" />
+                                <point x="0.5" y="0" />
+                                <point x="0.926829" y="0.0731707" />
+                                <point x="1" y="0.5" />
+                                <point x="0.926829" y="0.926829" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0731707" y="0.926829" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
             <object-type name="Potion7" sid="478358598635014">
                 <plugin id="Sprite" />
-                <instance-variables>
-                    <instance-variable name="P7_x" sid="470777786026238" type="number" />
-                    <instance-variable name="P7_y" sid="559465605663567" type="number" />
-                </instance-variables>
-                <behaviors>
-                    <behavior-type name="DragDrop" sid="130742724895820">
-                        <behavior id="DragnDrop" />
-                    </behavior-type>
-                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474609474520635" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\AV-Avant.png">
+                            <collision-poly>
+                                <point x="0.0731707" y="0.0731707" />
+                                <point x="0.5" y="0" />
+                                <point x="0.926829" y="0.0731707" />
+                                <point x="1" y="0.5" />
+                                <point x="0.926829" y="0.926829" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0731707" y="0.926829" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="1Poison" sid="837041783671447">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353728858581031" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\potions\images\1-poison.png">
+                            <collision-poly>
+                                <point x="0.375" y="0.375" />
+                                <point x="0.5" y="0.15625" />
+                                <point x="0.59375" y="0.40625" />
+                                <point x="0.65625" y="0.5" />
+                                <point x="0.6875" y="0.6875" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.28125" y="0.71875" />
+                                <point x="0.3125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2Vin" sid="825573900241012">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582794360748298" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\potions\images\2-vin.png">
+                            <collision-poly>
+                                <point x="0.375" y="0.375" />
+                                <point x="0.5" y="0.15625" />
+                                <point x="0.59375" y="0.40625" />
+                                <point x="0.6875" y="0.5" />
+                                <point x="0.6875" y="0.6875" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.28125" y="0.71875" />
+                                <point x="0.28125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="3AllerAvant" sid="830333336672450">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703744114794882" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\potions\images\3-allerAvant.png">
+                            <collision-poly>
+                                <point x="0.34375" y="0.34375" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.625" y="0.375" />
+                                <point x="0.59375" y="0.5" />
+                                <point x="0.78125" y="0.78125" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.21875" y="0.78125" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="4Poison" sid="885595139046625">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="934522942679995" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\potions\images\4-poison.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.09375" />
+                                <point x="0.625" y="0.375" />
+                                <point x="0.71875" y="0.5" />
+                                <point x="0.65625" y="0.65625" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.3125" y="0.6875" />
+                                <point x="0.25" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="5Poison" sid="426366306573277">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="608659082013262" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\potions\images\5-poison.png">
+                            <collision-poly>
+                                <point x="0.34375" y="0.34375" />
+                                <point x="0.5" y="0.21875" />
+                                <point x="0.59375" y="0.40625" />
+                                <point x="0.625" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.25" y="0.75" />
+                                <point x="0.34375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="6Vin" sid="806360922826854">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="308414883203061" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\potions\images\6-vin.png">
+                            <collision-poly>
+                                <point x="0.375" y="0.375" />
+                                <point x="0.5" y="0.03125" />
+                                <point x="0.59375" y="0.40625" />
+                                <point x="0.6875" y="0.5" />
+                                <point x="0.6875" y="0.6875" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.28125" y="0.71875" />
+                                <point x="0.28125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="7RetourArriere" sid="983228707163796">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846459162580015" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\potions\images\7-retourArriere.png">
+                            <collision-poly>
+                                <point x="0.34375" y="0.34375" />
+                                <point x="0.5" y="0.21875" />
+                                <point x="0.59375" y="0.40625" />
+                                <point x="0.625" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.25" y="0.75" />
+                                <point x="0.34375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ValidButton" sid="956633173846524">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Sprite10" sid="180351170253713">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="118288248723821" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\table.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ParcheminEnigme3" sid="951992386732117">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="811949315884268" speed="5">
+                        <frame duration="1" hotspotX="0.500756" hotspotY="0.500548" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\Enigme1-Parchemin.png">
+                            <collision-poly>
+                                <point x="0.101362" y="0.0733844" />
+                                <point x="0.499244" y="0.0438116" />
+                                <point x="0.895613" y="0.075575" />
+                                <point x="0.939486" y="0.499452" />
+                                <point x="0.891074" y="0.921139" />
+                                <point x="0.499244" y="0.973713" />
+                                <point x="0.101362" y="0.926616" />
+                                <point x="0.0711044" y="0.499452" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Emplacement" sid="939826783352151">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340177671433604" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\Emplacmeent.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1033,6 +1218,37 @@
                 <instance-variable name="L3" sid="153766950245652" type="number" />
                 <instance-variable name="L4" sid="265980045056254" type="number" />
             </instance-variables>
+        </family>
+        <family name="Potions" plugin-id="Sprite" sid="324239562867137">
+            <members>
+                <member>Potion1</member>
+                <member>Potion2</member>
+                <member>Potion3</member>
+                <member>Potion4</member>
+                <member>Potion5</member>
+                <member>Potion6</member>
+                <member>Potion7</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="spawn_x" sid="478718615888017" type="number" />
+                <instance-variable name="spawn_y" sid="261031299813293" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="698562005553565">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Positions" plugin-id="Sprite" sid="622362605293907">
+            <members>
+                <member>Position1</member>
+                <member>Position2</member>
+                <member>Position3</member>
+                <member>Position4</member>
+                <member>Position5</member>
+                <member>Position6</member>
+                <member>Position7</member>
+            </members>
         </family>
     </families>
     <layout-folder>
