@@ -2,5 +2,260 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Enigme 3</name>
-    <events />
+    <events>
+        <comment>// Enigme potions</comment>
+        <event-block sid="965239426207638">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="499896588187471" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="472222429605535">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="490475967155670" type="System">
+                            <param id="0" name="Object">Potions</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="807607924218072" type="Potions">
+                            <param id="0" name="Instance variable">spawn_x</param>
+                            <param id="1" name="Value">Self.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="105802990897504" type="Potions">
+                            <param id="0" name="Instance variable">spawn_y</param>
+                            <param id="1" name="Value">Self.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="942264033814867">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="846751039572621" type="Potions" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="162885796694147">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="853962504972208" type="Potions">
+                            <param id="0" name="Object">Positions</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="850341037740009">
+                            <conditions>
+                                <condition id="-15" name="Pick nearest/furthest" sid="209680515153063" type="Positions">
+                                    <param id="0" name="Which">0</param>
+                                    <param id="1" name="X">Potions.X</param>
+                                    <param id="2" name="Y">Potions.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="928090077253947">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="788246628486212" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="945706027530683" type="Potions">
+                            <param id="0" name="X">Self.spawn_x</param>
+                            <param id="1" name="Y">Self.spawn_y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="633887104047182">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="511282242518766" type="Potions">
+                    <param id="0" name="Object">Positions</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="680665021473312" type="ValidButton">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="794286961116965" type="ValidButton">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="899395521230174">
+            <conditions>
+                <condition id="-22" name="Else" sid="535264346145272" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="384422009786208">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="242150228027293" type="Potions" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="574682097058126" type="ValidButton">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="2" name="Set visible" sid="965772323637718" type="ValidButton">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Test Correspondance</comment>
+        <variable constant="0" name="Poison1IsSet2" sid="762303205284372" static="0" type="number">0</variable>
+        <variable constant="0" name="Poison2IsSet2" sid="134037371831568" static="0" type="number">0</variable>
+        <variable constant="0" name="Poison3IsSet2" sid="253411373018614" static="0" type="number">0</variable>
+        <variable constant="0" name="Vin1IsSet2" sid="500716763884814" static="0" type="number">0</variable>
+        <variable constant="0" name="Vin2IsSet2" sid="665552082121029" static="0" type="number">0</variable>
+        <variable constant="0" name="ArriereIsSet2" sid="688137926422129" static="0" type="number">0</variable>
+        <variable constant="0" name="AvantIsSet2" sid="316276403018948" static="0" type="number">0</variable>
+        <event-block sid="729549551429525">
+            <conditions>
+                <condition id="0" name="On clicked" sid="829619952655047" type="ValidButton" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="433780822648951">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="651461689587858" type="Potion1">
+                            <param id="0" name="Object">Position1</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="833382109815916" type="Potion1">
+                            <param id="0" name="Object">Position4</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="917801893617643" type="Potion1">
+                            <param id="0" name="Object">Position5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="968269243066278">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="911291400360291" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block any="1" sid="833329484463889">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="839047227269070" type="Potion2">
+                            <param id="0" name="Object">Position1</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="711131167971406" type="Potion2">
+                            <param id="0" name="Object">Position4</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="746179266000016" type="Potion2">
+                            <param id="0" name="Object">Position5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="646343832905130">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="440745916440185" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block any="1" sid="564714652573298">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="272208478150703" type="Potion3">
+                            <param id="0" name="Object">Position1</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="726263689605911" type="Potion3">
+                            <param id="0" name="Object">Position4</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="738027243985749" type="Potion3">
+                            <param id="0" name="Object">Position5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="424351554580144">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="653067597099402" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block any="1" sid="178234368104774">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="595855181729185" type="Potion4">
+                            <param id="0" name="Object">Position2</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="859887345457001" type="Potion4">
+                            <param id="0" name="Object">Position6</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="154921019691637">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="946680864893580" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block any="1" sid="448667332828241">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="926378583199844" type="Potion5">
+                            <param id="0" name="Object">Position2</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="118159315367782" type="Potion5">
+                            <param id="0" name="Object">Position6</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="458999269452963">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="812294796903767" type="Potion6">
+                            <param id="0" name="Object">Position7</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="878530256578227">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="507923380628993" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="443522095572366">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="988248289647666" type="Potion7">
+                            <param id="0" name="Object">Position3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="171102992388455">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="248264719220174" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>// Verifie si toutes les potions sont placées au bon endroit</comment>
+        <event-block sid="777175160736525">
+            <conditions>
+                <condition id="0" name="On clicked" sid="221771592168989" type="ValidButton" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="194292347131104">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Destroy" sid="325273914373020" type="ValidButton" />
+                    </actions>
+                </event-block>
+                <event-block sid="336159050592986">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="683127232821673" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
 </c2eventsheet>
