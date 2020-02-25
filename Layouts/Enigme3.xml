@@ -528,7 +528,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>64.354690552</x>
-                        <y>92.164031982</y>
+                        <y>100.05014801</y>
                         <z>0</z>
                         <width>35.191726685</width>
                         <height>11.730575562</height>
@@ -812,7 +812,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>31.096017838</x>
-                        <y>122.526168823</y>
+                        <y>126.268890381</y>
                         <z>0</z>
                         <width>100.778129578</width>
                         <height>12.597266197</height>
@@ -823,7 +823,7 @@
                 </instance>
                 <instance type="InfoGardes" uid="97">
                     <properties>
-                        <text>test</text>
+                        <text></text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Impact,-8,400,0</font>
                         <color>0,255,0</color>
@@ -837,13 +837,224 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>18.65914917</x>
-                        <y>108.662361145</y>
+                        <y>112.405082703</y>
                         <z>0</z>
                         <width>127.876708984</width>
                         <height>16.510505676</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PoisonText" uid="98">
+                    <properties>
+                        <text>Poison</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Open Sans Light,-3,300,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>35</x>
+                        <y>90.873901367</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PoisonText" uid="99">
+                    <properties>
+                        <text>Poison</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Open Sans Light,-3,300,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>51</x>
+                        <y>90.873901367</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PoisonText" uid="100">
+                    <properties>
+                        <text>Poison</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Open Sans Light,-3,300,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>66</x>
+                        <y>90.873901367</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="VinDOrtie" uid="101">
+                    <properties>
+                        <text>Vin</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Open Sans Light,-3,300,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>83</x>
+                        <y>90.873901367</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="VinDOrtie" uid="102">
+                    <properties>
+                        <text>Vin</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Open Sans Light,-3,300,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>97.629592896</x>
+                        <y>90.873901367</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ArriereText" uid="103">
+                    <properties>
+                        <text>Arrière</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Open Sans Light,-3,300,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>114</x>
+                        <y>90.873901367</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="AvantText" uid="104">
+                    <properties>
+                        <text>Avant</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Open Sans Light,-3,300,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>129</x>
+                        <y>90.873901367</y>
+                        <z>0</z>
+                        <width>15</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Exit" uid="105">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7.876455307</x>
+                        <y>6.55456543</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>8</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

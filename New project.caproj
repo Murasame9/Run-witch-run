@@ -24,6 +24,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -53,7 +54,7 @@
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">(default)</prop>
-        <prop name="Sampling">Linear</prop>
+        <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
@@ -849,37 +850,122 @@
             <object-type name="InfoGardes" sid="684463047492774">
                 <plugin id="Text" />
             </object-type>
-        </object-folder>
-        <object-folder name="cinematique">
-            <object-type name="cine1" sid="495357671409904">
+            <object-type name="PoisonText" sid="966782548387907">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="VinDOrtie" sid="264962846487524">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="ArriereText" sid="566248466503583">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="AvantText" sid="591690637098332">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Exit" sid="609807216691459">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340974719005507" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Run-witch-run\Cinematique\Potion.png" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="suite" pingpong="0" repeatcount="1" repeatto="0" sid="240884695720348" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Run-witch-run\Cinematique\Passe.png" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="suite2" pingpong="0" repeatcount="1" repeatto="0" sid="485163610680420" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Run-witch-run\Cinematique\Prison.png" />
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="666531155655946" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\exit.png">
+                            <collision-poly>
+                                <point x="0.0523256" y="0.0475687" />
+                                <point x="0.5" y="0.0422833" />
+                                <point x="0.717442" y="0.256871" />
+                                <point x="0.894186" y="0.5" />
+                                <point x="0.717442" y="0.743129" />
+                                <point x="0.182558" y="0.834038" />
+                                <point x="0.0348837" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="cine1text1" sid="578391631578020">
-                <plugin id="Text" />
-            </object-type>
-            <object-type name="cine1text2" sid="666354143742480">
-                <plugin id="Text" />
-            </object-type>
-            <object-type name="cine1text3" sid="108039808224108">
-                <plugin id="Text" />
-            </object-type>
-            <object-type name="cine1text4" sid="380774551841795">
-                <plugin id="Text" />
-            </object-type>
-            <object-type name="cine1text5" sid="152999087634490">
-                <plugin id="Text" />
-            </object-type>
+        </object-folder>
+        <object-folder name="cinematique">
+            <object-folder name="Cine1">
+                <object-type name="cine1" sid="495357671409904">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="414395275679319">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340974719005507" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Run-witch-run\Cinematique\Potion.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="suite" pingpong="0" repeatcount="1" repeatto="0" sid="240884695720348" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Run-witch-run\Cinematique\Passe.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="suite2" pingpong="0" repeatcount="1" repeatto="0" sid="485163610680420" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\manon\Desktop\Run-witch-run\Cinematique\Prison.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="cine1text1" sid="578391631578020">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="208124817814489">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="cine1text2" sid="666354143742480">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="747652191469758">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="cine1text3" sid="108039808224108">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="832800651497441">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="cine1text4" sid="380774551841795">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="241768519676086">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="cine1text5" sid="152999087634490">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="900787510516538">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+            </object-folder>
+            <object-folder name="Cine2">
+                <object-type name="cine2" sid="113372277083424">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="476731529065009" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\Cinematique\Bucher.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="cine2text1" sid="187617458175081">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+            <object-folder name="Cine3">
+                <object-type name="Sprite6" sid="243039077944243">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913303241330123" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Software\Mega\LUDUS\GameDesign\Puzzle Game - Sorcieres de Salem\img\Cinematique\Prison.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
         </object-folder>
         <object-type name="Keyboard" sid="456388559561016">
             <plugin id="Keyboard" />
@@ -1102,6 +1188,11 @@
         </object-type>
         <object-type name="cine1text6" sid="973220630584088">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="761635707026255">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
         </object-type>
         <object-type name="Sprite4" sid="602819232579298">
             <plugin id="Sprite" />
@@ -1111,7 +1202,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="325599736499537">
+        <object-type name="TriggerEnigme" sid="325599736499537">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135154863619943" speed="5">
@@ -1271,6 +1362,7 @@
         <layout>Cinematique start.xml</layout>
         <layout>options.xml</layout>
         <layout>Cinematique perdu.xml</layout>
+        <layout>Cinematique bucher.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet Niveau 1.xml</event-sheet>
@@ -1283,6 +1375,7 @@
         <event-sheet>Event sheet c start.xml</event-sheet>
         <event-sheet>Event sheet options.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="2" />

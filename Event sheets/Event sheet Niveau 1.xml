@@ -34,6 +34,21 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="544524167278211">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="326137366857480" type="Keyboard">
+                    <param id="0" name="Key">70</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="257825140913918" type="Personnage">
+                    <param id="0" name="Object">TriggerEnigme</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="496913912877417" type="System">
+                    <param id="0" name="Layout">Enigme3</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>// Deplacement avec ZQSD</comment>
         <comment>// changement d&apos;anim en fonction du déplacement</comment>
         <event-block sid="917821823951983">

@@ -36,6 +36,17 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>2</fade-in-time>
+                                <wait-time>15</wait-time>
+                                <fade-out-time>4</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -74,22 +85,33 @@
                     <properties>
                         <text>Quelque part en Europe, une sorcière tenta de créer un sort de rajeunissement. </text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Times New Roman,-11,400,0</font>
-                        <color>255,255,255</color>
+                        <font>Oswald Regular,-5,700,1</font>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>3</line-height>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>2</fade-in-time>
+                                <wait-time>5</wait-time>
+                                <fade-out-time>2</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>26.928100586</x>
-                        <y>-44.098846436</y>
+                        <x>3.69883728</x>
+                        <y>15</y>
                         <z>0</z>
-                        <width>205.503448486</width>
-                        <height>41.007324219</height>
+                        <width>95.713508606</width>
+                        <height>30.238624573</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -100,23 +122,34 @@
                 <instance type="cine1text2" uid="72">
                     <properties>
                         <text>Celui-ci est très dur à réaliser, personne n’a jamais réussi à le mener à bien et toutes sorcières qui s’y sont essayées sont toutes portées disparues. </text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Times New Roman,-11,400,0</font>
-                        <color>255,255,255</color>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Oswald Regular,-5,700,1</font>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>2</fade-in-time>
+                                <wait-time>5</wait-time>
+                                <fade-out-time>2</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>12.155471802</x>
-                        <y>-93.921012878</y>
+                        <x>0.974540472</x>
+                        <y>46.629764557</y>
                         <z>0</z>
-                        <width>250.981033325</width>
-                        <height>48.53843689</height>
+                        <width>101.390441895</width>
+                        <height>57.405944824</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -128,22 +161,33 @@
                     <properties>
                         <text>Malheureusement, notre sorcière n’y échappa pas ! </text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Times New Roman,-11,400,0</font>
-                        <color>255,255,255</color>
+                        <font>Oswald Regular,-5,700,1</font>
+                        <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>2</fade-in-time>
+                                <wait-time>5</wait-time>
+                                <fade-out-time>2</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>28.37664032</x>
-                        <y>-134.908309937</y>
+                        <x>3.31627655</x>
+                        <y>114.509307861</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>38.689849854</height>
+                        <width>95.132446289</width>
+                        <height>35.219970703</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -182,14 +226,25 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>5</fade-in-time>
+                                <wait-time>5</wait-time>
+                                <fade-out-time>2</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2.277282715</x>
-                        <y>157.347518921</y>
+                        <x>166.106567383</x>
+                        <y>-74.305160522</y>
                         <z>0</z>
-                        <width>254.45703125</width>
-                        <height>46.51083374</height>
+                        <width>205.618225098</width>
+                        <height>67.503639221</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -209,6 +264,17 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>2</fade-in-time>
+                                <wait-time>5</wait-time>
+                                <fade-out-time>2</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -236,11 +302,22 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>2</fade-in-time>
+                                <wait-time>5</wait-time>
+                                <fade-out-time>2</fade-out-time>
+                                <destroy>No</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1.538528442</x>
-                        <y>-46.002792358</y>
+                        <x>-94.847229004</x>
+                        <y>-86.935699463</y>
                         <z>0</z>
                         <width>220.885437012</width>
                         <height>30</height>

@@ -9,19 +9,30 @@
                 <condition id="-2" name="On start of layout" sid="722809699018999" type="System" />
             </conditions>
             <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="500252886543131" type="cine1">
+                    <param id="0" name="Fade-in time">2</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="101116469943685" type="cine1" />
+                <action id="-16" name="Wait" sid="695082983773369" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="192701557406872" type="cine1text1">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
                 <action id="-15" name="Set visible" sid="444890714435438" type="cine1text1">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="707972338427209" type="cine1text1" />
                 <action id="-3" name="Set position" sid="409168349220905" type="cine1text1">
-                    <param id="0" name="X">17.948</param>
-                    <param id="1" name="Y"> 111.451</param>
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Y">15</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="952255824243648">
             <conditions>
                 <condition id="0" name="On click" sid="708879911969804" type="Mouse">
-                    <param id="0" name="Mouse button">2</param>
+                    <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                 </condition>
             </conditions>
@@ -41,15 +52,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="394568097090484" type="cine1text1">
-                    <param id="0" name="Visibility">0</param>
-                </action>
                 <action id="-15" name="Set visible" sid="424426398291789" type="cine1text2">
                     <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-3" name="Set position" sid="762572198906842" type="cine1text2">
-                    <param id="0" name="X">-0.3</param>
-                    <param id="1" name="Y">100.444</param>
                 </action>
             </actions>
         </event-block>
@@ -68,10 +72,6 @@
                 <action id="-15" name="Set visible" sid="278796236418661" type="cine1text3">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="-3" name="Set position" sid="704922528984922" type="cine1text3">
-                    <param id="0" name="X">16.79</param>
-                    <param id="1" name="Y">114.348</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="717880477053487">
@@ -85,6 +85,12 @@
             <actions>
                 <action id="-15" name="Set visible" sid="852645050081489" type="cine1text3">
                     <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="Fade" id="3" name="Set wait time" sid="524490637617273" type="cine1text1">
+                    <param id="0" name="Wait time">2</param>
+                </action>
+                <action behavior="Fade" id="3" name="Set wait time" sid="915019615525849" type="cine1">
+                    <param id="0" name="Wait time">3</param>
                 </action>
                 <action id="4" name="Set animation" sid="414092663722572" type="cine1">
                     <param id="0" name="Animation">&quot;suite&quot;</param>

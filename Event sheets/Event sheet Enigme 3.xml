@@ -353,15 +353,15 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="325273914373020" type="ValidButton" />
-                        <action id="-9" name="Set value" sid="988060277819100" type="System">
-                            <param id="0" name="Variable">TimerIsOn</param>
-                            <param id="1" name="Value">0</param>
+                        <action id="4" name="Set font color" sid="766209343334076" type="InfoGardes">
+                            <param id="0" name="Color">rgb(0, 255, 0)</param>
                         </action>
                         <action id="0" name="Set text" sid="752639367754899" type="InfoGardes">
                             <param id="0" name="Text">&quot;BRAVO TU AS REUSSI !&quot;</param>
                         </action>
-                        <action id="4" name="Set font color" sid="766209343334076" type="InfoGardes">
-                            <param id="0" name="Color">rgb(0, 255, 0)</param>
+                        <action id="-9" name="Set value" sid="988060277819100" type="System">
+                            <param id="0" name="Variable">TimerIsOn</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -374,7 +374,7 @@
             </sub-events>
         </event-block>
         <comment>// Timer</comment>
-        <variable constant="0" name="TempsEnigmePotions" sid="369598772090317" static="0" type="number">45</variable>
+        <variable constant="0" name="TempsEnigmePotions" sid="369598772090317" static="0" type="number">120</variable>
         <variable constant="0" name="TimerIsOn" sid="291279663119519" static="0" type="number">1</variable>
         <event-block sid="480576277967609">
             <conditions>
@@ -389,7 +389,7 @@
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="4" name="Set maximum" sid="345138752737030" type="Temps">
-                    <param id="0" name="Maximum">45</param>
+                    <param id="0" name="Maximum">TempsEnigmePotions</param>
                 </action>
             </actions>
         </event-block>
@@ -416,10 +416,15 @@
         </event-block>
         <event-block sid="624449119334819">
             <conditions>
+                <condition id="-7" name="Compare instance variable" sid="684565806357865" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
                 <condition id="-7" name="Compare instance variable" sid="893031361935541" type="Temps">
                     <param id="0" name="Instance variable">Timer</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">30</param>
                 </condition>
             </conditions>
             <actions>
@@ -434,10 +439,15 @@
         </event-block>
         <event-block sid="183746749881018">
             <conditions>
+                <condition id="-7" name="Compare instance variable" sid="319856953624829" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">30</param>
+                </condition>
                 <condition id="-7" name="Compare instance variable" sid="737421672025285" type="Temps">
                     <param id="0" name="Instance variable">Timer</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">15</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">60</param>
                 </condition>
             </conditions>
             <actions>
@@ -455,10 +465,15 @@
         </event-block>
         <event-block sid="240518206786184">
             <conditions>
+                <condition id="-7" name="Compare instance variable" sid="671893615056220" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">60</param>
+                </condition>
                 <condition id="-7" name="Compare instance variable" sid="970912229871446" type="Temps">
                     <param id="0" name="Instance variable">Timer</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">25</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">90</param>
                 </condition>
             </conditions>
             <actions>
@@ -476,10 +491,15 @@
         </event-block>
         <event-block sid="643486334957786">
             <conditions>
+                <condition id="-7" name="Compare instance variable" sid="814305074571455" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">90</param>
+                </condition>
                 <condition id="-7" name="Compare instance variable" sid="312792448237771" type="Temps">
                     <param id="0" name="Instance variable">Timer</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">35</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">120</param>
                 </condition>
             </conditions>
             <actions>
@@ -500,7 +520,7 @@
                 <condition id="-7" name="Compare instance variable" sid="837141353843801" type="Temps">
                     <param id="0" name="Instance variable">Timer</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">45</param>
+                    <param id="2" name="Value">TempsEnigmePotions</param>
                 </condition>
             </conditions>
             <actions>
@@ -515,6 +535,21 @@
                 </action>
                 <action id="4" name="Set font color" sid="909120310621914" type="InfoGardes">
                     <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>// Button Exit</comment>
+        <event-block sid="633451924876469">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="717769215198669" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Exit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="395907489427526" type="System">
+                    <param id="0" name="Layout">Niveau1</param>
                 </action>
             </actions>
         </event-block>

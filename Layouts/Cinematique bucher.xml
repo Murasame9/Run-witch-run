@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Cinematique perdu</name>
-    <sid>378104818890287</sid>
-    <event-sheet>Event sheet 2</event-sheet>
+    <name>Cinematique bucher</name>
+    <sid>286425818690212</sid>
+    <event-sheet>Event sheet 3</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="317768563317432">
+        <layer name="Layer 0" sid="220903708202652">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite6" uid="107">
+                <instance type="cine2" uid="106">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>157.293487549</x>
-                        <y>69.000007629</y>
+                        <x>125.661346436</x>
+                        <y>74.49760437</y>
                         <z>0</z>
-                        <width>318.468566895</width>
-                        <height>179.138565063</height>
+                        <width>263.726196289</width>
+                        <height>148.345993042</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
