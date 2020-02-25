@@ -51,7 +51,12 @@
                                     <param id="2" name="Y">Potions.Y</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-3" name="Set position" sid="290348826875269" type="Potions">
+                                    <param id="0" name="X">Positions.X</param>
+                                    <param id="1" name="Y">Positions.Y</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -104,14 +109,14 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <comment>Test Correspondance</comment>
-        <variable constant="0" name="Poison1IsSet2" sid="762303205284372" static="0" type="number">0</variable>
-        <variable constant="0" name="Poison2IsSet2" sid="134037371831568" static="0" type="number">0</variable>
-        <variable constant="0" name="Poison3IsSet2" sid="253411373018614" static="0" type="number">0</variable>
-        <variable constant="0" name="Vin1IsSet2" sid="500716763884814" static="0" type="number">0</variable>
-        <variable constant="0" name="Vin2IsSet2" sid="665552082121029" static="0" type="number">0</variable>
-        <variable constant="0" name="ArriereIsSet2" sid="688137926422129" static="0" type="number">0</variable>
-        <variable constant="0" name="AvantIsSet2" sid="316276403018948" static="0" type="number">0</variable>
+        <comment>// Test Correspondance</comment>
+        <variable constant="0" name="Poison1IsSet" sid="762303205284372" static="0" type="number">0</variable>
+        <variable constant="0" name="Poison2IsSet" sid="134037371831568" static="0" type="number">0</variable>
+        <variable constant="0" name="Poison3IsSet" sid="253411373018614" static="0" type="number">0</variable>
+        <variable constant="0" name="Vin1IsSet" sid="500716763884814" static="0" type="number">0</variable>
+        <variable constant="0" name="Vin2IsSet" sid="665552082121029" static="0" type="number">0</variable>
+        <variable constant="0" name="ArriereIsSet" sid="688137926422129" static="0" type="number">0</variable>
+        <variable constant="0" name="AvantIsSet" sid="316276403018948" static="0" type="number">0</variable>
         <event-block sid="729549551429525">
             <conditions>
                 <condition id="0" name="On clicked" sid="829619952655047" type="ValidButton" />
@@ -130,13 +135,23 @@
                             <param id="0" name="Object">Position5</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="961117245330635" type="System">
+                            <param id="0" name="Variable">Poison1IsSet</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="968269243066278">
                     <conditions>
                         <condition id="-22" name="Else" sid="911291400360291" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="634720445635306" type="System">
+                            <param id="0" name="Variable">Poison1IsSet</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block any="1" sid="833329484463889">
                     <conditions>
@@ -150,13 +165,23 @@
                             <param id="0" name="Object">Position5</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="126008391209424" type="System">
+                            <param id="0" name="Variable">Poison2IsSet</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="646343832905130">
                     <conditions>
                         <condition id="-22" name="Else" sid="440745916440185" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="643242802126178" type="System">
+                            <param id="0" name="Variable">Poison2IsSet</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block any="1" sid="564714652573298">
                     <conditions>
@@ -170,13 +195,23 @@
                             <param id="0" name="Object">Position5</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="686197154282313" type="System">
+                            <param id="0" name="Variable">Poison3IsSet</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="424351554580144">
                     <conditions>
                         <condition id="-22" name="Else" sid="653067597099402" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="586497374365271" type="System">
+                            <param id="0" name="Variable">Poison3IsSet</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block any="1" sid="178234368104774">
                     <conditions>
@@ -187,13 +222,23 @@
                             <param id="0" name="Object">Position6</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="920476134985528" type="System">
+                            <param id="0" name="Variable">Vin1IsSet</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="154921019691637">
                     <conditions>
                         <condition id="-22" name="Else" sid="946680864893580" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="740000910275123" type="System">
+                            <param id="0" name="Variable">Vin1IsSet</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block any="1" sid="448667332828241">
                     <conditions>
@@ -204,7 +249,12 @@
                             <param id="0" name="Object">Position6</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="889652258104913" type="System">
+                            <param id="0" name="Variable">Vin2IsSet</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="458999269452963">
                     <conditions>
@@ -212,13 +262,23 @@
                             <param id="0" name="Object">Position7</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="771017145416879" type="System">
+                            <param id="0" name="Variable">ArriereIsSet</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="878530256578227">
                     <conditions>
                         <condition id="-22" name="Else" sid="507923380628993" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="510757315979914" type="System">
+                            <param id="0" name="Variable">ArriereIsSet</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="443522095572366">
                     <conditions>
@@ -226,13 +286,23 @@
                             <param id="0" name="Object">Position3</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="989046850820631" type="System">
+                            <param id="0" name="Variable">AvantIsSet</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="171102992388455">
                     <conditions>
                         <condition id="-22" name="Else" sid="248264719220174" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="606287704108773" type="System">
+                            <param id="0" name="Variable">AvantIsSet</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
@@ -244,9 +314,55 @@
             <actions />
             <sub-events>
                 <event-block sid="194292347131104">
-                    <conditions />
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="857412189781245" type="System">
+                            <param id="0" name="Variable">ArriereIsSet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="350796593753819" type="System">
+                            <param id="0" name="Variable">AvantIsSet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="463678769236919" type="System">
+                            <param id="0" name="Variable">Poison1IsSet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="569980425088813" type="System">
+                            <param id="0" name="Variable">Poison2IsSet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="325058305288756" type="System">
+                            <param id="0" name="Variable">Poison3IsSet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="731420730068871" type="System">
+                            <param id="0" name="Variable">Vin1IsSet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="902968688220828" type="System">
+                            <param id="0" name="Variable">Vin2IsSet</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="325273914373020" type="ValidButton" />
+                        <action id="-9" name="Set value" sid="988060277819100" type="System">
+                            <param id="0" name="Variable">TimerIsOn</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="752639367754899" type="InfoGardes">
+                            <param id="0" name="Text">&quot;BRAVO TU AS REUSSI !&quot;</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="766209343334076" type="InfoGardes">
+                            <param id="0" name="Color">rgb(0, 255, 0)</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="336159050592986">
@@ -256,6 +372,151 @@
                     <actions />
                 </event-block>
             </sub-events>
+        </event-block>
+        <comment>// Timer</comment>
+        <variable constant="0" name="TempsEnigmePotions" sid="369598772090317" static="0" type="number">45</variable>
+        <variable constant="0" name="TimerIsOn" sid="291279663119519" static="0" type="number">1</variable>
+        <event-block sid="480576277967609">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="142589510343991" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="411705265973654" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="648980166608914" type="InfoGardes">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set maximum" sid="345138752737030" type="Temps">
+                    <param id="0" name="Maximum">45</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="848708478303879">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="393462657525723" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="276008592427455" type="System">
+                    <param id="0" name="Variable">TimerIsOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="887867626531830" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="3" name="Set progress" sid="557394866918932" type="Temps">
+                    <param id="0" name="Value">Temps.Timer</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="624449119334819">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="893031361935541" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="757457629234947" type="InfoGardes">
+                    <param id="0" name="Text">&quot;RIEN A SIGNALER&quot;</param>
+                </action>
+                <action id="2" name="Set CSS style" sid="148931674582121" type="Temps">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;green&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="183746749881018">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="737421672025285" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="336480487231025" type="InfoGardes">
+                    <param id="0" name="Text">&quot;DEPECHE TOI !&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="161986202575157" type="InfoGardes">
+                    <param id="0" name="Color">rgb(255, 255, 0)</param>
+                </action>
+                <action id="2" name="Set CSS style" sid="839323082025393" type="Temps">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;yellow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="240518206786184">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="970912229871446" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">25</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="708425878105980" type="InfoGardes">
+                    <param id="0" name="Text">&quot;J&apos;ENTENDS DES PAS DANS LE COULOIR&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="882203837795851" type="InfoGardes">
+                    <param id="0" name="Color">rgb(255, 102, 0)</param>
+                </action>
+                <action id="2" name="Set CSS style" sid="663596601096169" type="Temps">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;orange&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="643486334957786">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="312792448237771" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">35</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="762995239177276" type="InfoGardes">
+                    <param id="0" name="Text">&quot;UN GARDE APPROCHE !&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="139218100619844" type="InfoGardes">
+                    <param id="0" name="Color">rgb(255, 0, 0)</param>
+                </action>
+                <action id="2" name="Set CSS style" sid="300285114173074" type="Temps">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;red&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="720933599604065">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="837141353843801" type="Temps">
+                    <param id="0" name="Instance variable">Timer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">45</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="670365266173212" type="InfoGardes">
+                    <param id="0" name="Text">&quot;ADIEU&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="275696530710557" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="130810262334200" type="System">
+                    <param id="0" name="Layout">&quot;Cinematique perdu&quot;</param>
+                </action>
+                <action id="4" name="Set font color" sid="909120310621914" type="InfoGardes">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

@@ -19,6 +19,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
@@ -52,7 +53,7 @@
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">(default)</prop>
-        <prop name="Sampling">Point</prop>
+        <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
@@ -839,6 +840,15 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Temps" sid="485551399533419">
+                <plugin id="progressbar" />
+                <instance-variables>
+                    <instance-variable name="Timer" sid="408259976870750" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type name="InfoGardes" sid="684463047492774">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="cinematique">
             <object-type name="cine1" sid="495357671409904">
@@ -1260,6 +1270,7 @@
         <layout>Menu.xml</layout>
         <layout>Cinematique start.xml</layout>
         <layout>options.xml</layout>
+        <layout>Cinematique perdu.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet Niveau 1.xml</event-sheet>
@@ -1271,6 +1282,7 @@
         <event-sheet>Event sheet Menu.xml</event-sheet>
         <event-sheet>Event sheet c start.xml</event-sheet>
         <event-sheet>Event sheet options.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="2" />
